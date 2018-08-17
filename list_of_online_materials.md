@@ -41,10 +41,12 @@ Sections:
 ## SQL
 
 ## BASH
+### Carpentries lesson
+- [The Unix Shell](http://swcarpentry.github.io/shell-novice)
 
 ## Git
 
 ### Carpentries lesson
-- [Version control with Git](http://swcarpentry.github.io/git-novice)
+- [Version Control with Git](http://swcarpentry.github.io/git-novice)
 
 ## Bioinformatics
