@@ -1,28 +1,43 @@
 A list of links for courses, tutorials, and cheatsheets that look like they might be useful - many are purely to record to come back to later to look at
 
-Sections:
+Workshops:
 - [Carpentries](#carpentries)
+- [RStudio](#rstudio)
+- [Bioconductor](#bioconductor)
+
+Topics:
 - [R](#r)
 - [SQL](#sql)
 - [BASH](#bash)
 - [Git](#git)
 - [Bioinformatics](#bioinformatics)
 
+## Workshops
 
-## [Carpentries](http://carpentries.org)
+This is a collection of links to a workshop lessons that span multiple topics
 
-[Data Carpentry](http://datacarpentry.org)
-- Genomics
-- Ecology
-- Social Sciences
+### Carpentries
 
-[Software Carpentry](https://software-carpentry.org/lessons/)
-- Unix shell
-- R
-- Python
-- Version Control
+[The Carpentries](http://carpentries.org)
 
+- [Data Carpentry](http://datacarpentry.org)
+  - Genomics
+  - Ecology
+  - Social Sciences
 
+- [Software Carpentry](https://software-carpentry.org/lessons/)
+  - Unix shell
+  - R
+  - Python
+  - Version Control
+
+- [Carpentries Instructor Training](https://carpentries.github.io/instructor-training/)
+
+### RStudio
+
+### Bioconductor
+
+[Bioconductor 2018 workshop](https://bioconductor.github.io/BiocWorkshops/index.html)
 
 ## R
 
