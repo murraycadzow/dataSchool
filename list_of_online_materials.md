@@ -1,12 +1,12 @@
 A list of links for courses, tutorials, and cheatsheets that look like they might be useful - many are purely to record to come back to later to look at
 
 Sections:
-- [Carpentries](#Carpentries)
-- [R](#R)
-- [SQL](#SQL)
-- [BASH](#BASH)
-- [Git](#Git)
-- [Bioinformatics](#Bioinformatics)
+- [Carpentries](#carpentries)
+- [R](#r)
+- [SQL](#sql)
+- [BASH](#bash)
+- [Git](#git)
+- [Bioinformatics](#bioinformatics)
 
 
 ## [Carpentries](http://carpentries.org)
