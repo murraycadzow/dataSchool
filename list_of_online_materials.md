@@ -16,9 +16,9 @@ Topics:
 ## Cheatsheets
 
 - [Git](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/)
-- [R](https://www.rstudio.com/resources/cheatsheets/)
+- [R](https://www.rstudio.com/resources/cheatsheets/) (and [git repo](https://github.com/rstudio/cheatsheets))
   - [Data visualisation in R](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
-  - [Data transformation in R](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf_
+  - [Data transformation in R](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
   - [RMarkdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 ## Workshops
@@ -44,11 +44,30 @@ This is a collection of links to a workshop lessons that span multiple topics
 
 ### RStudio
 
+RStudio::conf 2018
+- [Big Data in R](https://github.com/rstudio/bigdataclass2018)
+- [Debugging RStudio](https://github.com/ajmcoqui/debuggingRStudio)
+- [What They Forgot to Teach You About R](https://github.com/jennybc/what-they-forgot)
+- [Data Science in the Tidyverse](https://github.com/cwickham/data-science-in-tidyverse)
+
+
 ### Bioconductor
 
 [Bioconductor 2018 workshop](https://bioconductor.github.io/BiocWorkshops/index.html)
 
 ## R
+
+### Books
+
+- [R for Data Science](http://r4ds.had.co.nz/)
+- [Advanced R](adv-r.had.co.nz)
+- [R Packages](http://r-pkgs.had.co.nz/)
+- [RMarkdown](https://bookdown.org/yihui/rmarkdown/)
+- [Bookdown](https://bookdown.org/yihui/bookdown/)
+- [Handling Strings in R](https://www.gastonsanchez.com/r4strings/)
+- [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
+- [Data Visualisation](https://socviz.co)
+- [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 
 ### Carpentries lessons for R
 - Data Carpentry 
@@ -60,6 +79,11 @@ This is a collection of links to a workshop lessons that span multiple topics
   - [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
 
 ### RStudio Courses/Materials
+
+- [List of useful packages](https://github.com/rstudio/RStartHere)
+- [RStudio::conf talk materials](https://github.com/rstudio/rstudio-conf)
+- [Master the Tidyverse](https://github.com/rstudio/master-the-tidyverse)
+
 
 
 ## SQL
