@@ -10,7 +10,16 @@ Topics:
 - [SQL](#sql)
 - [BASH](#bash)
 - [Git](#git)
+- [Markdown](#markdown)
 - [Bioinformatics](#bioinformatics)
+
+## Cheatsheets
+
+- [Git](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/)
+- [R](https://www.rstudio.com/resources/cheatsheets/)
+  - [Data visualisation in R](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+  - [Data transformation in R](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf_
+  - [RMarkdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 ## Workshops
 
@@ -63,5 +72,8 @@ This is a collection of links to a workshop lessons that span multiple topics
 
 ### Carpentries lesson
 - [Version Control with Git](http://swcarpentry.github.io/git-novice)
+
+
+## Markdown
 
 ## Bioinformatics
