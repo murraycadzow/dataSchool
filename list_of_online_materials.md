@@ -62,9 +62,11 @@ RStudio::conf 2018
 - [Reproducible Research Workshop, Summer Institute in Statistics for Big Data, Seattle, WA (16-18 July 2018)](https://github.com/kabagg/sisbid_2018_rr)
 - [initial steps toward reproducible research](https://kbroman.org/steps2rr)
 
-## R
+## Topics
 
-### Books
+### R
+
+#### Books
 
 - [R for Data Science](http://r4ds.had.co.nz/)
 - [Advanced R](adv-r.had.co.nz)
@@ -77,14 +79,14 @@ RStudio::conf 2018
 - [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 - [Fundamentals of Data Visualisation](https://serialmentor.com/dataviz/)
 
-### Carpentries lessons for R 
+#### Carpentries lessons for R 
 - [DC:Ecology -  R for data analysis and visualization of Ecological Data](https://datacarpentry.org/R-ecology-lesson/)
 - [DC:SocialScience - R for Social Science](https://datacarpentry.org/r-socialsci/)
 - [DC:Genomics -  R for Genomics](https://datacarpentry.org/R-genomics/)
 - [SWC: Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
 - [SWC: R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
 
-### RStudio Courses/Materials
+#### RStudio Courses/Materials
 
 - [List of useful packages](https://github.com/rstudio/RStartHere)
 - [RStudio::conf talk materials](https://github.com/rstudio/rstudio-conf)
@@ -92,34 +94,34 @@ RStudio::conf 2018
 
 
 
-## SQL
+### SQL
 
-### Carpentries lessons
+#### Carpentries lessons
 - [SWC: Using Databases and SQL](http://swcarpentry.github.io/sql-novice-survey)
 - [DC:Ecology - Data Management with SQL](https://datacarpentry.org/sql-ecology-lesson/)
 
-## BASH
-### Carpentries lesson
+### BASH
+#### Carpentries lesson
 - [DC:Genomics - Introduction to the command line](https://datacarpentry.org/shell-genomics/)
 - [SWC: The Unix Shell](http://swcarpentry.github.io/shell-novice)
 - [SWC: Automation and Make](http://swcarpentry.github.io/make-novice/)
 
-## Git
+### Git
 
 - [Happy git with R](http://happygitwithr.com)
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Karl Broman - Git/Github Tutorial](https://kbroman.org/github_tutorial)
 
-### Carpentries lesson
+#### Carpentries lesson
 - [SWC: Version Control with Git](http://swcarpentry.github.io/git-novice)
 
 
-## Markdown
+### Markdown
 
 
 - [RMarkdown](https://bookdown.org/yihui/rmarkdown/)
 - [Bookdown](https://bookdown.org/yihui/bookdown/)
 
-## Bioinformatics
+### Bioinformatics
 
 - [EBI Online Courses](https://www.ebi.ac.uk/training/online/)
