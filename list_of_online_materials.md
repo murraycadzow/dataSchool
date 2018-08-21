@@ -61,7 +61,7 @@ RStudio::conf 2018
 - [Tools for Reproducible Research](http://kbroman.org/Tools4RR/)
 - [Reproducible Research Workshop, Summer Institute in Statistics for Big Data, Seattle, WA (16-18 July 2018)](https://github.com/kabagg/sisbid_2018_rr)
 - [initial steps toward reproducible research](https://kbroman.org/steps2rr)
-- []()
+
 ## R
 
 ### Books
@@ -95,8 +95,8 @@ RStudio::conf 2018
 ## SQL
 
 ### Carpentries lessons
--[SWC: Using Databases and SQL](http://swcarpentry.github.io/sql-novice-survey)
--[DC:Ecology - Data Management with SQL](https://datacarpentry.org/sql-ecology-lesson/)
+- [SWC: Using Databases and SQL](http://swcarpentry.github.io/sql-novice-survey)
+- [DC:Ecology - Data Management with SQL](https://datacarpentry.org/sql-ecology-lesson/)
 
 ## BASH
 ### Carpentries lesson
