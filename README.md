@@ -18,7 +18,7 @@ To achieve this, the following general topics will be covered
 - Automation of analysis workflows
 - Making reproducible reports
 
-Prior to taking this course it is recommended to be familiar with, and comfortable practicing the content in the Carpentries lessons on:
+Prior to taking this course it is recommended to have participated in a Carpentries workshop, and be familiar with and comfortable practicing the content in the Carpentries lessons on:
 - SWC - Unix Shell
 - SWC - Programming with R
 - SWC - R for Reproducible Scientific Analysis or DC (Ecology or Social Sciences) Data manipulation in R and Data visualisation in R
