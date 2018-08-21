@@ -111,6 +111,7 @@ RStudio::conf 2018
 - [Happy git with R](http://happygitwithr.com)
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Karl Broman - Git/Github Tutorial](https://kbroman.org/github_tutorial)
+- [A Quick Introduction to Version Control with Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668)
 
 #### Carpentries lesson
 - [SWC: Version Control with Git](http://swcarpentry.github.io/git-novice)
