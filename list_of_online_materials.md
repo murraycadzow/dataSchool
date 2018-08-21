@@ -103,7 +103,10 @@ RStudio::conf 2018
 
 ### BASH
 
-#### Carpentries lesson
+#### Books
+- [Data Science at the Commandline](https://www.datascienceatthecommandline.com)
+
+#### Carpentries lessons
 - [DC:Genomics - Introduction to the command line](https://datacarpentry.org/shell-genomics/)
 - [SWC: The Unix Shell](http://swcarpentry.github.io/shell-novice)
 - [SWC: Automation and Make](http://swcarpentry.github.io/make-novice/)
