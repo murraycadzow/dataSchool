@@ -12,6 +12,7 @@ Topics:
 - [Git](#git)
 - [Markdown](#markdown)
 - [Bioinformatics](#bioinformatics)
+- [Containers](#containers)
 
 ## Cheatsheets
 
@@ -101,6 +102,7 @@ RStudio::conf 2018
 - [DC:Ecology - Data Management with SQL](https://datacarpentry.org/sql-ecology-lesson/)
 
 ### BASH
+
 #### Carpentries lesson
 - [DC:Genomics - Introduction to the command line](https://datacarpentry.org/shell-genomics/)
 - [SWC: The Unix Shell](http://swcarpentry.github.io/shell-novice)
@@ -126,3 +128,10 @@ RStudio::conf 2018
 ### Bioinformatics
 
 - [EBI Online Courses](https://www.ebi.ac.uk/training/online/)
+
+### Containers
+
+#### Docker
+
+- [Create your first Docker container: A Beginner’s guide](https://linuxtechlab.com/create-docker-container-beginners-guide)
+- [Important Docker Commands for Beginners](https://linuxtechlab.com/important-docker-commands-beginners/)
