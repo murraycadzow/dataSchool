@@ -94,7 +94,7 @@ Table of Contents
 - Docker
 - Singularity
 
-Lesson 10: Putting it all together
+## Lesson 10: Putting it all together
 
 - snakeMake
 
