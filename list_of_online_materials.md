@@ -55,8 +55,8 @@ RStudio::conf 2018
 
 ### Bioconductor
 
-[Bioconductor 2018 workshop](https://bioconductor.github.io/BiocWorkshops/index.html)
-[Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)
+- [Bioconductor 2018 workshop](https://bioconductor.github.io/BiocWorkshops/index.html)
+- [Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)
 
 
 ### Harvard
