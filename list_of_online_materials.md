@@ -56,12 +56,19 @@ RStudio::conf 2018
 ### Bioconductor
 
 [Bioconductor 2018 workshop](https://bioconductor.github.io/BiocWorkshops/index.html)
+[Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)
+
+
+### Harvard
+
+- [HarvardX Biomedical Data Science Open Online Training](https://rafalab.github.io/pages/harvardx.html)
+- [HBC Training](https://hbctraining.github.io/Training-modules/)
 
 ### Karl Broman - Reproducible Research
 
 - [Tools for Reproducible Research](http://kbroman.org/Tools4RR/)
 - [Reproducible Research Workshop, Summer Institute in Statistics for Big Data, Seattle, WA (16-18 July 2018)](https://github.com/kabagg/sisbid_2018_rr)
-- [initial steps toward reproducible research](https://kbroman.org/steps2rr)
+- [Initial steps toward reproducible research](https://kbroman.org/steps2rr)
 
 ## Topics
 
