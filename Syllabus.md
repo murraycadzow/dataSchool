@@ -65,7 +65,7 @@ Table of Contents
 
 - regular expressions
 - dplyr
-  - \_at, \_each
+  - \_at, \_each, and \_if
 - purrr
 - stringr
 
@@ -74,10 +74,11 @@ Table of Contents
 
 - SQL
 
-- Browsers
+- Browsers/APIs
   - Ensembl
   - UCSC
   - EBI
+  - BioMart
 
 ## Lesson 7: Bioconductor
 
