@@ -1,6 +1,6 @@
 # dataSchool
 
-A course of 10 lessions to cover additional skills beyond that delivered as part of a Carpentries 2-day workshop with a focus on reproducible research (in a computational sense)
+A course of 10 lessons to cover additional skills beyond that delivered as part of a Carpentries 2-day workshop with a focus on reproducible research (in a computational sense)
 
 The goal of the course is to enhance efficiency, productivity, computational reproducibility for researchers (primarily in Health Sciences). It will therefore be a data centric in nature.
 
