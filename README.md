@@ -1,5 +1,7 @@
 # dataSchool
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 A course of 10 lessons to cover additional skills beyond that delivered as part of a Carpentries 2-day workshop with a focus on reproducible research (in a computational sense)
 
 The goal of the course is to enhance efficiency, productivity, computational reproducibility for researchers (primarily in Health Sciences). It will therefore be a data centric in nature.
