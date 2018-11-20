@@ -1,4 +1,17 @@
 # Annotation
 
+
+## Genomic Annotation formats
+
+- BED
+- GTF/GFF
+
+## Getting annotations
+
+### AnnotationHub
+
+## Creating Annotations
+
+
 Refs
 - https://dockflow.org/workflow/annotation-genomic-ranges/

@@ -1,1 +1,35 @@
 # Generic and Functional
+
+Learning objectives
+
+- Define a function that takes arguments.
+- Return a value from a function.
+- Check argument conditions with stopifnot() in functions.
+- Test a function.
+- Set default values for function arguments.
+- Explain why we should divide programs into small, single-purpose functions.
+
+## functions
+
+
+## dplyr
+
+- {summarise,mutate}_at()
+- {summarise,mutate}_if()
+- {summarise,mutate}_all()
+
+## purrr
+
+- map()
+  - _dbl
+  - _int
+  - _lgl
+  - _chr
+  - _df
+  - _dfr
+  - _dfc
+- map2()
+- pmap()
+- imap()
+- flattern
+- at_depth

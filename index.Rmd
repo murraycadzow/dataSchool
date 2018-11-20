@@ -10,9 +10,13 @@ link-citations: yes
 description: "The lessons for the Otago Data School"
 ---
 
-# Prerequisites
+# Prerequisites 
 
+This course is designed to follow on from:
 
+Data Carpentry Ecology
+
+Software Carpentry - Shell, R, and Git
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
