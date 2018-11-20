@@ -1,3 +1,0 @@
-# Introduction {#intro}
-
-This the course book for the Otago Data School. The course is under development.

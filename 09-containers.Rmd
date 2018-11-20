@@ -1,5 +1,0 @@
-# Containers
-
-## Docker
-
-## Singularity
