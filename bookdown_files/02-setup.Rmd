@@ -1,0 +1,124 @@
+# Getting Set Up
+
+
+Learning objectives
+
+- Organize files and directories for a set of analyses as an R Project, and understand the purpose of the working directory.
+- Configure git the first time it is used on a computer.
+- Understand the meaning of the --global configuration flag.
+- Understand the use of config files 
+- Create a git repository
+
+
+## Required packages
+
+```{r, eval = FALSE}
+install.packages('testthat')
+install.packages('devtools')
+install.packages('usethis')
+install.packages('tidyverse')
+install.packages('bookdown')
+install.packages('here')
+```
+
+
+## Project Setup
+
+
+Create a new project in RStudio called _data\_school_
+
+### Project directory setup
+
+Now we want to create the following directory structure inside the project directory
+
+```
+data_school/
+  |- data/
+  |- data_output/
+  |- documents/
+  |- fig_output/
+  |- scripts/
+```
+
+We also want to create a README file to describe the contents of the project to remind ourselves (and others) about what this project is about and what to expect in each directory
+
+In R we can do this with the `use_readme_md()` function from the usethis package.
+```{r, eval= FALSE}
+usethis::use_readme_md()
+```
+
+### Adding version control
+
+Throughout these lessons we're going to try and replicate a workflow that follows best practices and as such including version control for our scripts and documents is needed.
+
+
+There are multiple ways this can be done, we're going to focus initially on the command line method to set this up.
+
+The first thing we need to do is to create the git repository that is going to watch the files we tell it to so that we can keep track of the changes between versions.
+
+Before we do anything with git we first need to make sure that everything is configured. This usually a single setup that only needs to be done once per machine.
+
+If you have a github account set your username and email to match your github details
+
+Set your user name
+```
+git config --global user.name="my name"
+```
+
+Set your email
+```
+git config --global user.email="my@email.com"
+```
+
+
+set the way git interprets line endings
+
+```
+# On macOS and Linux:
+git config --global core.autocrlf input
+
+# On Windows:
+git config --global core.autocrlf true
+```
+
+
+#### Setup the Git repository
+
+```
+git init
+```
+
+Next we're going to tell git which directories to not watch
+
+```
+nano .gitignore
+```
+
+Now we need to tell git about the .gitignore file
+
+```
+git add .gitignore
+```
+
+
+#### Adding a remote repository
+
+create a new repository in github (Don't add a README or LICENSE).
+
+Now grab the url and add it as a remote for your local repository
+
+```
+git remote --add origin https://github.com/username/reponame
+```
+
+## Config Files
+
+An often overlooked part of setting up is the creation and maintainence of config files to control various settings in your environment and can be used to customise the environments to how you work.
+
+We're going to look at a few 
+
+- bash config
+- Rprofile
+
+
+## Getting to know our data
