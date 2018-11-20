@@ -1,0 +1,756 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Otago Data School},
+            pdfauthor={Murray Cadzow},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Otago Data School}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Murray Cadzow}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2018-11-21}
+
+\usepackage{booktabs}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{prerequisites}{%
+\chapter{Prerequisites}\label{prerequisites}}
+
+This course is designed to follow on from:
+
+Data Carpentry Ecology
+
+Software Carpentry - Shell, R, and Git
+
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
+
+This the course book for the Otago Data School. The course is under
+development.
+
+\hypertarget{getting-set-up}{%
+\chapter{Getting Set Up}\label{getting-set-up}}
+
+Learning objectives
+
+\begin{itemize}
+\tightlist
+\item
+  Organize files and directories for a set of analyses as an R Project,
+  and understand the purpose of the working directory.
+\item
+  Configure git the first time it is used on a computer.
+\item
+  Understand the meaning of the --global configuration flag.
+\item
+  Understand the use of config files
+\item
+  Create a git repository
+\end{itemize}
+
+\hypertarget{required-packages}{%
+\section{Required packages}\label{required-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'testthat'}\NormalTok{)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'devtools'}\NormalTok{)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'usethis'}\NormalTok{)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'tidyverse'}\NormalTok{)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'bookdown'}\NormalTok{)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{'here'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{project-setup}{%
+\section{Project Setup}\label{project-setup}}
+
+Create a new project in RStudio called \emph{data\_school}
+
+\hypertarget{project-directory-setup}{%
+\subsection{Project directory setup}\label{project-directory-setup}}
+
+Now we want to create the following directory structure inside the
+project directory
+
+\begin{verbatim}
+data_school/
+  |- data/
+  |- data_output/
+  |- documents/
+  |- fig_output/
+  |- scripts/
+\end{verbatim}
+
+We also want to create a README file to describe the contents of the
+project to remind ourselves (and others) about what this project is
+about and what to expect in each directory
+
+In R we can do this with the \texttt{use\_readme\_md()} function from
+the usethis package.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{usethis}\OperatorTok{::}\KeywordTok{use_readme_md}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{adding-version-control}{%
+\subsection{Adding version control}\label{adding-version-control}}
+
+Throughout these lessons we're going to try and replicate a workflow
+that follows best practices and as such including version control for
+our scripts and documents is needed.
+
+There are multiple ways this can be done, we're going to focus initially
+on the command line method to set this up.
+
+The first thing we need to do is to create the git repository that is
+going to watch the files we tell it to so that we can keep track of the
+changes between versions.
+
+Before we do anything with git we first need to make sure that
+everything is configured. This usually a single setup that only needs to
+be done once per machine.
+
+If you have a github account set your username and email to match your
+github details
+
+Set your user name
+
+\begin{verbatim}
+git config --global user.name="my name"
+\end{verbatim}
+
+Set your email
+
+\begin{verbatim}
+git config --global user.email="my@email.com"
+\end{verbatim}
+
+set the way git interprets line endings
+
+\begin{verbatim}
+# On macOS and Linux:
+git config --global core.autocrlf input
+
+# On Windows:
+git config --global core.autocrlf true
+\end{verbatim}
+
+\hypertarget{setup-the-git-repository}{%
+\subsubsection{Setup the Git
+repository}\label{setup-the-git-repository}}
+
+\begin{verbatim}
+git init
+\end{verbatim}
+
+Next we're going to tell git which directories to not watch
+
+\begin{verbatim}
+nano .gitignore
+\end{verbatim}
+
+Now we need to tell git about the .gitignore file
+
+\begin{verbatim}
+git add .gitignore
+\end{verbatim}
+
+\hypertarget{adding-a-remote-repository}{%
+\subsubsection{Adding a remote
+repository}\label{adding-a-remote-repository}}
+
+create a new repository in github (Don't add a README or LICENSE).
+
+Now grab the url and add it as a remote for your local repository
+
+\begin{verbatim}
+git remote --add origin https://github.com/username/reponame
+\end{verbatim}
+
+\hypertarget{config-files}{%
+\section{Config Files}\label{config-files}}
+
+An often overlooked part of setting up is the creation and maintainence
+of config files to control various settings in your environment and can
+be used to customise the environments to how you work.
+
+We're going to look at a few
+
+\begin{itemize}
+\tightlist
+\item
+  bash config
+\item
+  Rprofile
+\end{itemize}
+
+\hypertarget{getting-to-know-our-data}{%
+\section{Getting to know our data}\label{getting-to-know-our-data}}
+
+\hypertarget{data-manipulation-and-visualisation}{%
+\chapter{Data Manipulation and
+Visualisation}\label{data-manipulation-and-visualisation}}
+
+\hypertarget{learning-objectives}{%
+\section{Learning objectives}\label{learning-objectives}}
+
+dplyr
+
+\begin{itemize}
+\tightlist
+\item
+  Describe the purpose of the dplyr and tidyr packages.
+\item
+  Select certain columns in a data frame with the dplyr function select.
+\item
+  Select certain rows in a data frame according to filtering conditions
+  with the dplyr function filter .
+\item
+  Link the output of one dplyr function to the input of another function
+  with the `pipe' operator \%\textgreater{}\%.
+\item
+  Add new columns to a data frame that are functions of existing columns
+  with mutate.
+\item
+  Use the split-apply-combine concept for data analysis.
+\item
+  Use summarize, group\_by, and count to split a data frame into groups
+  of observations, apply a summary statistics for each group, and then
+  combine the results.
+\item
+  Describe the concept of a wide and a long table format and for which
+  purpose those formats are useful.
+\item
+  Describe what key-value pairs are.
+\item
+  Reshape a data frame from long to wide format and back with the spread
+  and gather commands from the tidyr package.
+\item
+  Export a data frame to a .csv file.
+\end{itemize}
+
+ggplot2
+
+\begin{itemize}
+\tightlist
+\item
+  Produce scatter plots, boxplots, and time series plots using ggplot.
+\item
+  Set universal plot settings.
+\item
+  Describe what faceting is and apply faceting in ggplot.
+\item
+  Modify the aesthetics of an existing ggplot plot (including axis
+  labels and color).
+\item
+  Build complex and customized plots from data in a data frame.
+\end{itemize}
+
+\hypertarget{data-manipulation-with-dplyr}{%
+\section{Data manipulation with
+dplyr}\label{data-manipulation-with-dplyr}}
+
+\begin{itemize}
+\tightlist
+\item
+  select()
+\item
+  filter()
+\item
+  mutate()
+\item
+  arrange()
+\item
+  tally()/count()
+\item
+  group\_by()
+\item
+  summarise()
+\end{itemize}
+
+\hypertarget{data-visualisation-with-ggplot2}{%
+\section{Data visualisation with
+ggplot2}\label{data-visualisation-with-ggplot2}}
+
+\begin{itemize}
+\tightlist
+\item
+  ggplot()
+\item
+  aes()
+\item
+  geom\_point()
+\item
+  geom\_line()
+\item
+  facet\_wrap()
+\item
+  theme()
+\end{itemize}
+
+\hypertarget{reports-and-documentation}{%
+\chapter{Reports and Documentation}\label{reports-and-documentation}}
+
+\hypertarget{learning-objectives-1}{%
+\section{Learning objectives}\label{learning-objectives-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  understand the contents of a YAML header
+\item
+  create and compile a markdown document
+\item
+  understand the contents of code chunk
+\item
+  compile a document to multiple output formats
+\end{itemize}
+
+\hypertarget{topics}{%
+\section{Topics}\label{topics}}
+
+\begin{itemize}
+\tightlist
+\item
+  Value of reproducible reports
+\item
+  Basics of Markdown
+\item
+  R code chunks
+\item
+  Chunk options
+\item
+  Inline R code
+\item
+  Other output formats
+\end{itemize}
+
+\hypertarget{generic-and-functional}{%
+\chapter{Generic and Functional}\label{generic-and-functional}}
+
+Learning objectives
+
+\begin{itemize}
+\tightlist
+\item
+  Define a function that takes arguments.
+\item
+  Return a value from a function.
+\item
+  Check argument conditions with stopifnot() in functions.
+\item
+  Test a function.
+\item
+  Set default values for function arguments.
+\item
+  Explain why we should divide programs into small, single-purpose
+  functions.
+\end{itemize}
+
+\hypertarget{functions}{%
+\section{functions}\label{functions}}
+
+\hypertarget{dplyr}{%
+\section{dplyr}\label{dplyr}}
+
+\begin{itemize}
+\tightlist
+\item
+  \{summarise,mutate\}\_at()
+\item
+  \{summarise,mutate\}\_if()
+\item
+  \{summarise,mutate\}\_all()
+\end{itemize}
+
+\hypertarget{purrr}{%
+\section{purrr}\label{purrr}}
+
+\begin{itemize}
+\tightlist
+\item
+  map()
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \_dbl
+  \item
+    \_int
+  \item
+    \_lgl
+  \item
+    \_chr
+  \item
+    \_df
+  \item
+    \_dfr
+  \item
+    \_dfc
+  \end{itemize}
+\item
+  map2()
+\item
+  pmap()
+\item
+  imap()
+\item
+  flattern
+\item
+  at\_depth
+\end{itemize}
+
+\hypertarget{databases-and-apis}{%
+\chapter{Databases and API's}\label{databases-and-apis}}
+
+This lesson is going to focus on how to programatically retrieve
+(genomic) data from online repositorys such as Ensembl, UCSC, and,
+BioMart
+
+\hypertarget{learning-objectives-2}{%
+\section{Learning objectives}\label{learning-objectives-2}}
+
+\hypertarget{sql}{%
+\subsection{SQL}\label{sql}}
+
+\begin{itemize}
+\tightlist
+\item
+  Explain the difference between a table, a record, and a field.
+\item
+  Explain the difference between a database and a database manager.
+\item
+  Write a query to select all values for specific fields from a single
+  table.
+\item
+  Write queries that display results in a particular order.
+\item
+  Write queries that eliminate duplicate values from data.
+\item
+  Write queries that select records that satisfy user-specified
+  conditions.
+\item
+  Explain the order in which the clauses in a query are executed.
+\item
+  Write queries that calculate new values for each selected record.
+\item
+  Explain how databases represent missing information.
+\item
+  Explain the three-valued logic databases use when manipulating missing
+  information.
+\item
+  Write queries that handle missing information correctly.
+\item
+  Define aggregation and give examples of its use.
+\item
+  Write queries that compute aggregated values.
+\item
+  Trace the execution of a query that performs aggregation.
+\item
+  Explain how missing data is handled during aggregation.
+\item
+  Explain the operation of a query that joins two tables.
+\item
+  Explain how to restrict the output of a query containing a join to
+  only include meaningful combinations of values.
+\item
+  Write queries that join tables on equal keys.
+\item
+  Explain what primary and foreign keys are, and why they are useful.
+\item
+  Explain what an atomic value is.
+\item
+  Distinguish between atomic and non-atomic values.
+\item
+  Explain why every value in a database should be atomic.
+\item
+  Explain what a primary key is and why every record should have one.
+\item
+  Identify primary keys in database tables.
+\item
+  Explain why database entries should not contain redundant information.
+\item
+  Identify redundant information in databases.
+\item
+  Write statements that create tables.
+\item
+  Write statements to insert, modify, and delete records.
+\item
+  Write short programs that execute SQL queries.
+\item
+  Trace the execution of a program that contains an SQL query.
+\item
+  Explain why most database applications are written in a
+  general-purpose language rather than in SQL.
+\end{itemize}
+
+\hypertarget{sql-1}{%
+\section{SQL}\label{sql-1}}
+
+\hypertarget{dplyrdbplyr}{%
+\subsection{dplyr/dbplyr}\label{dplyrdbplyr}}
+
+\hypertarget{refs}{%
+\subsection{Refs}\label{refs}}
+
+\href{https://swcarpentry.github.io/sql-novice-survey/}{Software
+Carpentry SQL lesson}
+
+\hypertarget{apis}{%
+\section{API's}\label{apis}}
+
+\hypertarget{rest}{%
+\subsection{REST}\label{rest}}
+
+Ref
+\url{https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/}
+
+\hypertarget{biomart}{%
+\subsubsection{BioMart}\label{biomart}}
+
+\url{https://asia.ensembl.org/info/data/biomart/biomart_restful.html}
+
+\hypertarget{ensembl}{%
+\subsubsection{Ensembl}\label{ensembl}}
+
+\url{https://github.com/Ensembl/ensembl-rest/wiki}
+
+\hypertarget{ucsc}{%
+\subsubsection{UCSC}\label{ucsc}}
+
+\url{http://genomewiki.ucsc.edu/index.php/Programmatic_access_to_the_Genome_Browser}
+
+\hypertarget{bioconductor}{%
+\chapter{Bioconductor}\label{bioconductor}}
+
+\hypertarget{introduction-to-bioconductor}{%
+\section{Introduction to
+Bioconductor}\label{introduction-to-bioconductor}}
+
+\hypertarget{dealing-with-genomic-ranges}{%
+\section{Dealing with genomic
+ranges}\label{dealing-with-genomic-ranges}}
+
+\hypertarget{iranges}{%
+\subsection{IRanges}\label{iranges}}
+
+\begin{itemize}
+\tightlist
+\item
+  IRanges()
+\item
+  start()
+\item
+  end()
+\item
+  width()
+\item
+  intersect()
+\item
+  union()
+\item
+  reduce()
+\item
+  subsetByOverlaps()
+\end{itemize}
+
+\hypertarget{genomic-ranges}{%
+\subsection{Genomic Ranges}\label{genomic-ranges}}
+
+\begin{itemize}
+\tightlist
+\item
+  GRanges()
+\item
+  seqnames()
+\end{itemize}
+
+\hypertarget{dbi}{%
+\section{DBI}\label{dbi}}
+
+\hypertarget{homo.sapiens}{%
+\subsection{Homo.sapiens}\label{homo.sapiens}}
+
+\hypertarget{annotation}{%
+\chapter{Annotation}\label{annotation}}
+
+\hypertarget{genomic-annotation-formats}{%
+\section{Genomic Annotation formats}\label{genomic-annotation-formats}}
+
+\begin{itemize}
+\tightlist
+\item
+  BED
+\item
+  GTF/GFF
+\end{itemize}
+
+\hypertarget{getting-annotations}{%
+\section{Getting annotations}\label{getting-annotations}}
+
+\hypertarget{annotationhub}{%
+\subsection{AnnotationHub}\label{annotationhub}}
+
+\hypertarget{creating-annotations}{%
+\section{Creating Annotations}\label{creating-annotations}}
+
+Refs - \url{https://dockflow.org/workflow/annotation-genomic-ranges/}
+
+\hypertarget{containers}{%
+\chapter{Containers}\label{containers}}
+
+\hypertarget{docker}{%
+\section{Docker}\label{docker}}
+
+\hypertarget{singularity}{%
+\section{Singularity}\label{singularity}}
+
+\hypertarget{putting-it-all-together}{%
+\chapter{Putting It All Together}\label{putting-it-all-together}}
+
+In this section we're going to create a reproducible workflow that
+involves aspects of all the previous lessons.
+
+Refs
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf}
+\item
+  \url{https://dockflow.org}
+\end{itemize}
+
+\hypertarget{summary}{%
+\chapter{Summary}\label{summary}}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}

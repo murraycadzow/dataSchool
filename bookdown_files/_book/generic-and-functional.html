@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Otago Data School</title>
+  <meta name="description" content="The lessons for the Otago Data School">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Otago Data School" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="The lessons for the Otago Data School" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Otago Data School" />
+  
+  <meta name="twitter:description" content="The lessons for the Otago Data School" />
+  
+
+<meta name="author" content="Murray Cadzow">
+
+
+<meta name="date" content="2018-11-21">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="reports-and-documentation.html">
+<link rel="next" href="databases-and-apis.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Otago Data School</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="getting-set-up.html"><a href="getting-set-up.html"><i class="fa fa-check"></i><b>3</b> Getting Set Up</a><ul>
+<li class="chapter" data-level="3.1" data-path="getting-set-up.html"><a href="getting-set-up.html#required-packages"><i class="fa fa-check"></i><b>3.1</b> Required packages</a></li>
+<li class="chapter" data-level="3.2" data-path="getting-set-up.html"><a href="getting-set-up.html#project-setup"><i class="fa fa-check"></i><b>3.2</b> Project Setup</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="getting-set-up.html"><a href="getting-set-up.html#project-directory-setup"><i class="fa fa-check"></i><b>3.2.1</b> Project directory setup</a></li>
+<li class="chapter" data-level="3.2.2" data-path="getting-set-up.html"><a href="getting-set-up.html#adding-version-control"><i class="fa fa-check"></i><b>3.2.2</b> Adding version control</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="getting-set-up.html"><a href="getting-set-up.html#config-files"><i class="fa fa-check"></i><b>3.3</b> Config Files</a></li>
+<li class="chapter" data-level="3.4" data-path="getting-set-up.html"><a href="getting-set-up.html#getting-to-know-our-data"><i class="fa fa-check"></i><b>3.4</b> Getting to know our data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-manipulation-and-visualisation.html"><a href="data-manipulation-and-visualisation.html"><i class="fa fa-check"></i><b>4</b> Data Manipulation and Visualisation</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-manipulation-and-visualisation.html"><a href="data-manipulation-and-visualisation.html#learning-objectives"><i class="fa fa-check"></i><b>4.1</b> Learning objectives</a></li>
+<li class="chapter" data-level="4.2" data-path="data-manipulation-and-visualisation.html"><a href="data-manipulation-and-visualisation.html#data-manipulation-with-dplyr"><i class="fa fa-check"></i><b>4.2</b> Data manipulation with dplyr</a></li>
+<li class="chapter" data-level="4.3" data-path="data-manipulation-and-visualisation.html"><a href="data-manipulation-and-visualisation.html#data-visualisation-with-ggplot2"><i class="fa fa-check"></i><b>4.3</b> Data visualisation with ggplot2</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="reports-and-documentation.html"><a href="reports-and-documentation.html"><i class="fa fa-check"></i><b>5</b> Reports and Documentation</a><ul>
+<li class="chapter" data-level="5.1" data-path="reports-and-documentation.html"><a href="reports-and-documentation.html#learning-objectives-1"><i class="fa fa-check"></i><b>5.1</b> Learning objectives</a></li>
+<li class="chapter" data-level="5.2" data-path="reports-and-documentation.html"><a href="reports-and-documentation.html#topics"><i class="fa fa-check"></i><b>5.2</b> Topics</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="generic-and-functional.html"><a href="generic-and-functional.html"><i class="fa fa-check"></i><b>6</b> Generic and Functional</a><ul>
+<li class="chapter" data-level="6.1" data-path="generic-and-functional.html"><a href="generic-and-functional.html#functions"><i class="fa fa-check"></i><b>6.1</b> functions</a></li>
+<li class="chapter" data-level="6.2" data-path="generic-and-functional.html"><a href="generic-and-functional.html#dplyr"><i class="fa fa-check"></i><b>6.2</b> dplyr</a></li>
+<li class="chapter" data-level="6.3" data-path="generic-and-functional.html"><a href="generic-and-functional.html#purrr"><i class="fa fa-check"></i><b>6.3</b> purrr</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="databases-and-apis.html"><a href="databases-and-apis.html"><i class="fa fa-check"></i><b>7</b> Databases and API’s</a><ul>
+<li class="chapter" data-level="7.1" data-path="databases-and-apis.html"><a href="databases-and-apis.html#learning-objectives-2"><i class="fa fa-check"></i><b>7.1</b> Learning objectives</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="databases-and-apis.html"><a href="databases-and-apis.html#sql"><i class="fa fa-check"></i><b>7.1.1</b> SQL</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="databases-and-apis.html"><a href="databases-and-apis.html#sql-1"><i class="fa fa-check"></i><b>7.2</b> SQL</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="databases-and-apis.html"><a href="databases-and-apis.html#dplyrdbplyr"><i class="fa fa-check"></i><b>7.2.1</b> dplyr/dbplyr</a></li>
+<li class="chapter" data-level="7.2.2" data-path="databases-and-apis.html"><a href="databases-and-apis.html#refs"><i class="fa fa-check"></i><b>7.2.2</b> Refs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="databases-and-apis.html"><a href="databases-and-apis.html#apis"><i class="fa fa-check"></i><b>7.3</b> API’s</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="databases-and-apis.html"><a href="databases-and-apis.html#rest"><i class="fa fa-check"></i><b>7.3.1</b> REST</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="bioconductor.html"><a href="bioconductor.html"><i class="fa fa-check"></i><b>8</b> Bioconductor</a><ul>
+<li class="chapter" data-level="8.1" data-path="bioconductor.html"><a href="bioconductor.html#introduction-to-bioconductor"><i class="fa fa-check"></i><b>8.1</b> Introduction to Bioconductor</a></li>
+<li class="chapter" data-level="8.2" data-path="bioconductor.html"><a href="bioconductor.html#dealing-with-genomic-ranges"><i class="fa fa-check"></i><b>8.2</b> Dealing with genomic ranges</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="bioconductor.html"><a href="bioconductor.html#iranges"><i class="fa fa-check"></i><b>8.2.1</b> IRanges</a></li>
+<li class="chapter" data-level="8.2.2" data-path="bioconductor.html"><a href="bioconductor.html#genomic-ranges"><i class="fa fa-check"></i><b>8.2.2</b> Genomic Ranges</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="bioconductor.html"><a href="bioconductor.html#dbi"><i class="fa fa-check"></i><b>8.3</b> DBI</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="bioconductor.html"><a href="bioconductor.html#homo.sapiens"><i class="fa fa-check"></i><b>8.3.1</b> Homo.sapiens</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="annotation.html"><a href="annotation.html"><i class="fa fa-check"></i><b>9</b> Annotation</a><ul>
+<li class="chapter" data-level="9.1" data-path="annotation.html"><a href="annotation.html#genomic-annotation-formats"><i class="fa fa-check"></i><b>9.1</b> Genomic Annotation formats</a></li>
+<li class="chapter" data-level="9.2" data-path="annotation.html"><a href="annotation.html#getting-annotations"><i class="fa fa-check"></i><b>9.2</b> Getting annotations</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="annotation.html"><a href="annotation.html#annotationhub"><i class="fa fa-check"></i><b>9.2.1</b> AnnotationHub</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="annotation.html"><a href="annotation.html#creating-annotations"><i class="fa fa-check"></i><b>9.3</b> Creating Annotations</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="containers.html"><a href="containers.html"><i class="fa fa-check"></i><b>10</b> Containers</a><ul>
+<li class="chapter" data-level="10.1" data-path="containers.html"><a href="containers.html#docker"><i class="fa fa-check"></i><b>10.1</b> Docker</a></li>
+<li class="chapter" data-level="10.2" data-path="containers.html"><a href="containers.html#singularity"><i class="fa fa-check"></i><b>10.2</b> Singularity</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="putting-it-all-together.html"><a href="putting-it-all-together.html"><i class="fa fa-check"></i><b>11</b> Putting It All Together</a></li>
+<li class="chapter" data-level="12" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>12</b> Summary</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Otago Data School</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="generic-and-functional" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Generic and Functional</h1>
+<p>Learning objectives</p>
+<ul>
+<li>Define a function that takes arguments.</li>
+<li>Return a value from a function.</li>
+<li>Check argument conditions with stopifnot() in functions.</li>
+<li>Test a function.</li>
+<li>Set default values for function arguments.</li>
+<li>Explain why we should divide programs into small, single-purpose functions.</li>
+</ul>
+<div id="functions" class="section level2">
+<h2><span class="header-section-number">6.1</span> functions</h2>
+</div>
+<div id="dplyr" class="section level2">
+<h2><span class="header-section-number">6.2</span> dplyr</h2>
+<ul>
+<li>{summarise,mutate}_at()</li>
+<li>{summarise,mutate}_if()</li>
+<li>{summarise,mutate}_all()</li>
+</ul>
+</div>
+<div id="purrr" class="section level2">
+<h2><span class="header-section-number">6.3</span> purrr</h2>
+<ul>
+<li>map()
+<ul>
+<li>_dbl</li>
+<li>_int</li>
+<li>_lgl</li>
+<li>_chr</li>
+<li>_df</li>
+<li>_dfr</li>
+<li>_dfc</li>
+</ul></li>
+<li>map2()</li>
+<li>pmap()</li>
+<li>imap()</li>
+<li>flattern</li>
+<li>at_depth</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reports-and-documentation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="databases-and-apis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["Otago_data_school_course.pdf", "Otago_data_school_course.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
